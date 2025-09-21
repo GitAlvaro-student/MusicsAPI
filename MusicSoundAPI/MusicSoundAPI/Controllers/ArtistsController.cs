@@ -1,9 +1,12 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging.Abstractions;
+using MonitoringLogs.Models;
 using MusicSoundAPI.Data.Artista;
 using MusicSoundAPI.Models;
 using MusicSoundAPI.Services.Artist;
 using Serilog;
+using System.Reflection;
 
 namespace MusicSoundAPI.Controllers
 {
@@ -30,13 +33,18 @@ namespace MusicSoundAPI.Controllers
         public async Task<IActionResult> GetArtistById(int idArtist)
         {
             var artist = await _artistService.GetArtistaById(idArtist);
-            //_logger.LogInformation($"Buscando Artista pelo Id {idArtist}");
 
             if (artist == null)
             {
-                //_logger.LogInformation($"Artista de Id {idArtist} nâo encontrado");
-                //var nullLog = SetLog(LogLevel.Information.ToString(), $"Artista não encontrado", "GetArtistById", idArtist);
-                //Log.Information(nullLog);
+                string app = Assembly.GetEntryAssembly().GetName().Name!;
+                string source = HttpContext.Request.RouteValues.Values.First()!.ToString()!;
+                var dict = new Dictionary<string, object>() { { "Properties", idArtist} };
+
+                var nullLog = new FailureLog().SetLog(HttpContext, app,
+                         source, LogLevel.Error.ToString()
+                         , $"Artista nao encontrado", dict);
+                
+                Log.Error(nullLog);
 
                 return NotFound("Artista Não Encontrado!!");
             }
@@ -107,5 +115,6 @@ namespace MusicSoundAPI.Controllers
             }
 
         }
+
     }
 }

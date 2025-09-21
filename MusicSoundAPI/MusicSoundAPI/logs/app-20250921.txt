@@ -1,0 +1,205 @@
+2025-09-21 18:37:11.578 -03:00 [INF] Now listening on: https://localhost:7206
+2025-09-21 18:37:11.714 -03:00 [INF] Now listening on: http://localhost:5070
+2025-09-21 18:37:13.621 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-21 18:37:13.729 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/index.html - null null
+2025-09-21 18:37:13.812 -03:00 [INF] Hosting environment: Development
+2025-09-21 18:37:13.885 -03:00 [INF] Content root path: C:\Users\marti\source\repos\MusicSoundAPI\MusicSoundAPI\MusicSoundAPI
+2025-09-21 18:37:15.079 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/index.html - 200 null text/html;charset=utf-8 1385.6629ms
+2025-09-21 18:37:15.947 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-21 18:37:15.967 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 19.8328ms
+2025-09-21 18:37:16.092 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_vs/browserLink - null null
+2025-09-21 18:37:16.187 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_vs/browserLink - 200 null text/javascript; charset=UTF-8 96.0726ms
+2025-09-21 18:37:16.787 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - null null
+2025-09-21 18:37:16.824 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 36.8445ms
+2025-09-21 18:51:50.749 -03:00 [INF] Now listening on: https://localhost:7206
+2025-09-21 18:51:50.846 -03:00 [INF] Now listening on: http://localhost:5070
+2025-09-21 18:51:51.257 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-21 18:51:51.263 -03:00 [INF] Hosting environment: Development
+2025-09-21 18:51:51.264 -03:00 [INF] Content root path: C:\Users\marti\source\repos\MusicSoundAPI\MusicSoundAPI\MusicSoundAPI
+2025-09-21 18:51:52.655 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/index.html - null null
+2025-09-21 18:51:53.371 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/index.html - 200 null text/html;charset=utf-8 724.7273ms
+2025-09-21 18:51:53.419 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-21 18:51:53.420 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_vs/browserLink - null null
+2025-09-21 18:51:53.497 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 78.3228ms
+2025-09-21 18:51:53.823 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_vs/browserLink - 200 null text/javascript; charset=UTF-8 402.6163ms
+2025-09-21 18:51:54.139 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - null null
+2025-09-21 18:51:54.262 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 123.2375ms
+2025-09-21 18:52:11.950 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/Artists/1 - null null
+2025-09-21 18:52:11.978 -03:00 [INF] Executing endpoint 'MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI)'
+2025-09-21 18:52:12.041 -03:00 [INF] Route matched with {action = "GetArtistById", controller = "Artists"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetArtistById(Int32) on controller MusicSoundAPI.Controllers.ArtistsController (MusicSoundAPI).
+2025-09-21 18:52:16.175 -03:00 [INF] Executed DbCommand (320ms) [Parameters=[:p_0='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."ID_ARTIST", "a"."GENERO", "a"."NACIONALIDADE", "a"."NASCIMENTO", "a"."ARTISTA"
+FROM "MUSICA"."ARTISTAS" "a"
+WHERE "a"."ID_ARTIST" = :p_0
+FETCH FIRST 1 ROWS ONLY
+2025-09-21 18:52:16.462 -03:00 [INF] Executing OkObjectResult, writing value of type 'MusicSoundAPI.Data.Artista.ReadArtistDTO'.
+2025-09-21 18:52:16.513 -03:00 [INF] Executed action MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI) in 4461.8382ms
+2025-09-21 18:52:16.517 -03:00 [INF] Executed endpoint 'MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI)'
+2025-09-21 18:52:16.544 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/Artists/1 - 200 null application/json; charset=utf-8 4594.1637ms
+2025-09-21 18:52:26.005 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/Artists/102 - null null
+2025-09-21 18:52:26.048 -03:00 [INF] Executing endpoint 'MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI)'
+2025-09-21 18:52:26.050 -03:00 [INF] Route matched with {action = "GetArtistById", controller = "Artists"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetArtistById(Int32) on controller MusicSoundAPI.Controllers.ArtistsController (MusicSoundAPI).
+2025-09-21 18:52:26.141 -03:00 [INF] Executed DbCommand (30ms) [Parameters=[:p_0='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."ID_ARTIST", "a"."GENERO", "a"."NACIONALIDADE", "a"."NASCIMENTO", "a"."ARTISTA"
+FROM "MUSICA"."ARTISTAS" "a"
+WHERE "a"."ID_ARTIST" = :p_0
+FETCH FIRST 1 ROWS ONLY
+2025-09-21 18:52:38.297 -03:00 [ERR] {"CorrelationalId":"7c07b6b6-7719-48ba-96d5-f29f2a892f15","TimeStamp":"2025-09-21T21:52:37.105\u002B0","Application":"MusicSoundAPI","Source":"GetArtistById","Code":"200","Message":"Artista n\u00E3o encontrado","Level":"Error","Properties":{"Properties":102}}
+2025-09-21 18:52:43.382 -03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2025-09-21 18:52:43.388 -03:00 [INF] Executed action MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI) in 17331.2122ms
+2025-09-21 18:52:43.392 -03:00 [INF] Executed endpoint 'MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI)'
+2025-09-21 18:52:43.394 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/Artists/102 - 404 null text/plain; charset=utf-8 17388.8534ms
+2025-09-21 19:01:25.495 -03:00 [INF] Now listening on: https://localhost:7206
+2025-09-21 19:01:25.597 -03:00 [INF] Now listening on: http://localhost:5070
+2025-09-21 19:01:25.758 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-21 19:01:26.741 -03:00 [INF] Hosting environment: Development
+2025-09-21 19:01:26.777 -03:00 [INF] Content root path: C:\Users\marti\source\repos\MusicSoundAPI\MusicSoundAPI\MusicSoundAPI
+2025-09-21 19:01:27.001 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/index.html - null null
+2025-09-21 19:01:27.849 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/index.html - 200 null text/html;charset=utf-8 856.7669ms
+2025-09-21 19:01:27.955 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-21 19:01:27.980 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_vs/browserLink - null null
+2025-09-21 19:01:28.243 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 287.6411ms
+2025-09-21 19:01:28.724 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_vs/browserLink - 200 null text/javascript; charset=UTF-8 743.2679ms
+2025-09-21 19:01:28.829 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - null null
+2025-09-21 19:01:28.958 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 129.2186ms
+2025-09-21 19:01:40.265 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/Artists/103 - null null
+2025-09-21 19:01:40.303 -03:00 [INF] Executing endpoint 'MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI)'
+2025-09-21 19:01:40.366 -03:00 [INF] Route matched with {action = "GetArtistById", controller = "Artists"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetArtistById(Int32) on controller MusicSoundAPI.Controllers.ArtistsController (MusicSoundAPI).
+2025-09-21 19:01:44.146 -03:00 [INF] Executed DbCommand (262ms) [Parameters=[:p_0='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."ID_ARTIST", "a"."GENERO", "a"."NACIONALIDADE", "a"."NASCIMENTO", "a"."ARTISTA"
+FROM "MUSICA"."ARTISTAS" "a"
+WHERE "a"."ID_ARTIST" = :p_0
+FETCH FIRST 1 ROWS ONLY
+2025-09-21 19:02:06.133 -03:00 [ERR] {"CorrelationalId":"9fc558b2-150d-4c79-8a2f-84cee3aefa6e","TimeStamp":"2025-09-21T22:02:06.111\u002B0","Application":"MusicSoundAPI","Source":"GetArtistById","Code":"200","Message":"Artista n\u00E3o encontrado","Level":"Error","Properties":{"Properties":103}}
+2025-09-21 19:02:06.150 -03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2025-09-21 19:02:06.193 -03:00 [INF] Executed action MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI) in 25783.1865ms
+2025-09-21 19:02:06.196 -03:00 [INF] Executed endpoint 'MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI)'
+2025-09-21 19:02:06.244 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/Artists/103 - 404 null text/plain; charset=utf-8 25979.1532ms
+2025-09-21 19:03:13.590 -03:00 [INF] Now listening on: https://localhost:7206
+2025-09-21 19:03:13.742 -03:00 [INF] Now listening on: http://localhost:5070
+2025-09-21 19:03:14.892 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/index.html - null null
+2025-09-21 19:03:14.906 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-21 19:03:15.384 -03:00 [INF] Hosting environment: Development
+2025-09-21 19:03:15.596 -03:00 [INF] Content root path: C:\Users\marti\source\repos\MusicSoundAPI\MusicSoundAPI\MusicSoundAPI
+2025-09-21 19:03:15.950 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/index.html - 200 null text/html;charset=utf-8 1067.4094ms
+2025-09-21 19:03:15.984 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-21 19:03:15.987 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_vs/browserLink - null null
+2025-09-21 19:03:16.122 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 137.2332ms
+2025-09-21 19:03:16.314 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_vs/browserLink - 200 null text/javascript; charset=UTF-8 326.4235ms
+2025-09-21 19:03:16.475 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - null null
+2025-09-21 19:03:16.543 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 67.936ms
+2025-09-21 19:04:13.177 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/Artists/69 - null null
+2025-09-21 19:04:13.218 -03:00 [INF] Executing endpoint 'MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI)'
+2025-09-21 19:04:13.275 -03:00 [INF] Route matched with {action = "GetArtistById", controller = "Artists"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetArtistById(Int32) on controller MusicSoundAPI.Controllers.ArtistsController (MusicSoundAPI).
+2025-09-21 19:04:18.591 -03:00 [INF] Executed DbCommand (435ms) [Parameters=[:p_0='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."ID_ARTIST", "a"."GENERO", "a"."NACIONALIDADE", "a"."NASCIMENTO", "a"."ARTISTA"
+FROM "MUSICA"."ARTISTAS" "a"
+WHERE "a"."ID_ARTIST" = :p_0
+FETCH FIRST 1 ROWS ONLY
+2025-09-21 19:04:18.825 -03:00 [ERR] {"CorrelationalId":"e9ab9c2c-115f-4a1f-9b70-daa62545932b","TimeStamp":"2025-09-21T22:04:18.762\u002B0","Application":"MusicSoundAPI","Source":"GetArtistById","Code":"200","Message":"Artista nao encontrado","Level":"Error","Properties":{"Properties":69}}
+2025-09-21 19:04:18.848 -03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2025-09-21 19:04:18.874 -03:00 [INF] Executed action MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI) in 5584.1944ms
+2025-09-21 19:04:18.880 -03:00 [INF] Executed endpoint 'MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI)'
+2025-09-21 19:04:18.929 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/Artists/69 - 404 null text/plain; charset=utf-8 5752.9384ms
+2025-09-21 19:05:13.052 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/Artists/36 - null null
+2025-09-21 19:05:13.060 -03:00 [INF] Executing endpoint 'MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI)'
+2025-09-21 19:05:13.063 -03:00 [INF] Route matched with {action = "GetArtistById", controller = "Artists"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetArtistById(Int32) on controller MusicSoundAPI.Controllers.ArtistsController (MusicSoundAPI).
+2025-09-21 19:05:13.173 -03:00 [INF] Executed DbCommand (43ms) [Parameters=[:p_0='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."ID_ARTIST", "a"."GENERO", "a"."NACIONALIDADE", "a"."NASCIMENTO", "a"."ARTISTA"
+FROM "MUSICA"."ARTISTAS" "a"
+WHERE "a"."ID_ARTIST" = :p_0
+FETCH FIRST 1 ROWS ONLY
+2025-09-21 19:05:13.183 -03:00 [ERR] {"CorrelationalId":"286b4b67-d011-4366-adf1-ff88b366e3e9","TimeStamp":"2025-09-21T22:05:13.183\u002B0","Application":"MusicSoundAPI","Source":"GetArtistById","Code":"200","Message":"Artista nao encontrado","Level":"Error","Properties":{"Properties":36}}
+2025-09-21 19:05:13.186 -03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2025-09-21 19:05:13.188 -03:00 [INF] Executed action MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI) in 122.0607ms
+2025-09-21 19:05:13.192 -03:00 [INF] Executed endpoint 'MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI)'
+2025-09-21 19:05:13.198 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/Artists/36 - 404 null text/plain; charset=utf-8 146.717ms
+2025-09-21 19:05:55.996 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/Artists/36 - null null
+2025-09-21 19:05:56.001 -03:00 [INF] Executing endpoint 'MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI)'
+2025-09-21 19:05:56.003 -03:00 [INF] Route matched with {action = "GetArtistById", controller = "Artists"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetArtistById(Int32) on controller MusicSoundAPI.Controllers.ArtistsController (MusicSoundAPI).
+2025-09-21 19:05:56.129 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[:p_0='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."ID_ARTIST", "a"."GENERO", "a"."NACIONALIDADE", "a"."NASCIMENTO", "a"."ARTISTA"
+FROM "MUSICA"."ARTISTAS" "a"
+WHERE "a"."ID_ARTIST" = :p_0
+FETCH FIRST 1 ROWS ONLY
+2025-09-21 19:05:56.134 -03:00 [ERR] {"CorrelationalId":"2b44e283-7f17-4125-93cb-fbc048f91bac","TimeStamp":"2025-09-21T22:05:56.133\u002B0","Application":"MusicSoundAPI","Source":"GetArtistById","Code":"200","Message":"Artista nao encontrado","Level":"Error","Properties":{"Properties":36}}
+2025-09-21 19:05:56.137 -03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2025-09-21 19:05:56.140 -03:00 [INF] Executed action MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI) in 134.1584ms
+2025-09-21 19:05:56.144 -03:00 [INF] Executed endpoint 'MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI)'
+2025-09-21 19:05:56.146 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/Artists/36 - 404 null text/plain; charset=utf-8 150.4075ms
+2025-09-21 19:06:12.935 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/Artists/25 - null null
+2025-09-21 19:06:12.943 -03:00 [INF] Executing endpoint 'MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI)'
+2025-09-21 19:06:12.945 -03:00 [INF] Route matched with {action = "GetArtistById", controller = "Artists"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetArtistById(Int32) on controller MusicSoundAPI.Controllers.ArtistsController (MusicSoundAPI).
+2025-09-21 19:06:12.985 -03:00 [INF] Executed DbCommand (19ms) [Parameters=[:p_0='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."ID_ARTIST", "a"."GENERO", "a"."NACIONALIDADE", "a"."NASCIMENTO", "a"."ARTISTA"
+FROM "MUSICA"."ARTISTAS" "a"
+WHERE "a"."ID_ARTIST" = :p_0
+FETCH FIRST 1 ROWS ONLY
+2025-09-21 19:06:13.134 -03:00 [INF] Executing OkObjectResult, writing value of type 'MusicSoundAPI.Data.Artista.ReadArtistDTO'.
+2025-09-21 19:06:13.160 -03:00 [INF] Executed action MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI) in 209.7924ms
+2025-09-21 19:06:13.164 -03:00 [INF] Executed endpoint 'MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI)'
+2025-09-21 19:06:13.166 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/Artists/25 - 200 null application/json; charset=utf-8 232.1452ms
+2025-09-21 19:06:18.352 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/Artists/48 - null null
+2025-09-21 19:06:18.372 -03:00 [INF] Executing endpoint 'MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI)'
+2025-09-21 19:06:18.374 -03:00 [INF] Route matched with {action = "GetArtistById", controller = "Artists"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetArtistById(Int32) on controller MusicSoundAPI.Controllers.ArtistsController (MusicSoundAPI).
+2025-09-21 19:06:18.401 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[:p_0='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."ID_ARTIST", "a"."GENERO", "a"."NACIONALIDADE", "a"."NASCIMENTO", "a"."ARTISTA"
+FROM "MUSICA"."ARTISTAS" "a"
+WHERE "a"."ID_ARTIST" = :p_0
+FETCH FIRST 1 ROWS ONLY
+2025-09-21 19:06:54.541 -03:00 [ERR] {"CorrelationalId":"d9159292-de79-41df-9efd-a7850854d522","TimeStamp":"2025-09-21T22:06:26.558\u002B0","Application":"MusicSoundAPI","Source":"GetArtistById","Code":"200","Message":"Artista nao encontrado","Level":"Error","Properties":{"Properties":48}}
+2025-09-21 19:06:58.995 -03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2025-09-21 19:06:58.997 -03:00 [INF] Executed action MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI) in 40614.9948ms
+2025-09-21 19:06:58.999 -03:00 [INF] Executed endpoint 'MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI)'
+2025-09-21 19:06:59.002 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/Artists/48 - 404 null text/plain; charset=utf-8 40650.2265ms
+2025-09-21 19:21:52.784 -03:00 [INF] Now listening on: https://localhost:7206
+2025-09-21 19:21:52.868 -03:00 [INF] Now listening on: http://localhost:5070
+2025-09-21 19:21:52.974 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-21 19:21:52.977 -03:00 [INF] Hosting environment: Development
+2025-09-21 19:21:52.979 -03:00 [INF] Content root path: C:\Users\marti\source\repos\MusicSoundAPI\MusicSoundAPI\MusicSoundAPI
+2025-09-21 19:21:54.338 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/index.html - null null
+2025-09-21 19:22:12.695 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_vs/browserLink - null null
+2025-09-21 19:22:12.697 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-21 19:22:12.721 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 24.1432ms
+2025-09-21 19:22:12.749 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/index.html - 200 null text/html;charset=utf-8 18429.8232ms
+2025-09-21 19:22:12.778 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/_vs/browserLink - 200 null text/javascript; charset=UTF-8 83.4209ms
+2025-09-21 19:22:13.006 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - null null
+2025-09-21 19:22:18.922 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5916.3382ms
+2025-09-21 19:23:09.214 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/Artists/28 - null null
+2025-09-21 19:23:38.702 -03:00 [INF] Executing endpoint 'MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI)'
+2025-09-21 19:23:38.738 -03:00 [INF] Route matched with {action = "GetArtistById", controller = "Artists"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetArtistById(Int32) on controller MusicSoundAPI.Controllers.ArtistsController (MusicSoundAPI).
+2025-09-21 19:23:41.976 -03:00 [INF] Executed DbCommand (206ms) [Parameters=[:p_0='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."ID_ARTIST", "a"."GENERO", "a"."NACIONALIDADE", "a"."NASCIMENTO", "a"."ARTISTA"
+FROM "MUSICA"."ARTISTAS" "a"
+WHERE "a"."ID_ARTIST" = :p_0
+FETCH FIRST 1 ROWS ONLY
+2025-09-21 19:23:42.176 -03:00 [INF] Executing OkObjectResult, writing value of type 'MusicSoundAPI.Data.Artista.ReadArtistDTO'.
+2025-09-21 19:23:42.207 -03:00 [INF] Executed action MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI) in 3457.1398ms
+2025-09-21 19:23:42.213 -03:00 [INF] Executed endpoint 'MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI)'
+2025-09-21 19:23:59.331 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/Artists/28 - 200 null application/json; charset=utf-8 50117.4259ms
+2025-09-21 19:28:23.717 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/Artists/39 - null null
+2025-09-21 19:29:03.797 -03:00 [INF] Executing endpoint 'MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI)'
+2025-09-21 19:29:03.801 -03:00 [INF] Route matched with {action = "GetArtistById", controller = "Artists"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetArtistById(Int32) on controller MusicSoundAPI.Controllers.ArtistsController (MusicSoundAPI).
+2025-09-21 19:29:03.903 -03:00 [INF] Executed DbCommand (24ms) [Parameters=[:p_0='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."ID_ARTIST", "a"."GENERO", "a"."NACIONALIDADE", "a"."NASCIMENTO", "a"."ARTISTA"
+FROM "MUSICA"."ARTISTAS" "a"
+WHERE "a"."ID_ARTIST" = :p_0
+FETCH FIRST 1 ROWS ONLY
+2025-09-21 19:29:03.927 -03:00 [ERR] {"CorrelationalId":"b0dc4934-765b-44fd-b4c2-65489e9c5bfb","TimeStamp":"2025-09-21T22:29:03.921\u002B0","Application":"MusicSoundAPI","Source":"GetArtistById","Code":"200","Message":"Artista nao encontrado","Level":"Error","Properties":{"Properties":39}}
+2025-09-21 19:29:03.932 -03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2025-09-21 19:29:03.935 -03:00 [INF] Executed action MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI) in 132.3941ms
+2025-09-21 19:29:03.938 -03:00 [INF] Executed endpoint 'MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI)'
+2025-09-21 19:29:04.004 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/Artists/39 - 404 null text/plain; charset=utf-8 40287.6527ms
+2025-09-21 19:32:14.629 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7206/api/Artists/37 - null null
+2025-09-21 19:32:18.586 -03:00 [INF] Executing endpoint 'MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI)'
+2025-09-21 19:32:18.590 -03:00 [INF] Route matched with {action = "GetArtistById", controller = "Artists"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetArtistById(Int32) on controller MusicSoundAPI.Controllers.ArtistsController (MusicSoundAPI).
+2025-09-21 19:32:18.779 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[:p_0='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='0']
+SELECT "a"."ID_ARTIST", "a"."GENERO", "a"."NACIONALIDADE", "a"."NASCIMENTO", "a"."ARTISTA"
+FROM "MUSICA"."ARTISTAS" "a"
+WHERE "a"."ID_ARTIST" = :p_0
+FETCH FIRST 1 ROWS ONLY
+2025-09-21 19:33:39.956 -03:00 [ERR] {"CorrelationalId":"fed0a31e-ab51-4d03-8a78-04a0d5ca5fde","TimeStamp":"2025-09-21T22:32:55.062\u002B0","Application":"MusicSoundAPI","Source":"GetArtistById","Code":"200","Message":"Artista nao encontrado","Level":"Error","Properties":{"Properties":37}}
+2025-09-21 19:33:39.978 -03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2025-09-21 19:33:39.981 -03:00 [INF] Executed action MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI) in 81388.104ms
+2025-09-21 19:33:39.984 -03:00 [INF] Executed endpoint 'MusicSoundAPI.Controllers.ArtistsController.GetArtistById (MusicSoundAPI)'
+2025-09-21 19:33:40.194 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7206/api/Artists/37 - 404 null text/plain; charset=utf-8 85565.1805ms
