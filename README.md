@@ -3,6 +3,9 @@
 API desenvolvida em **.NET 8** com **Entity Framework Core**, focada em fornecer endpoints para gerenciamento de músicas, artistas.  
 O projeto segue boas práticas de arquitetura e é ideal como base para estudos ou aplicações reais relacionadas ao domínio musical.
 
+Além disso, este projeto integra **Azure Blob Storage**, **Azure Event Hub** e **Serilog** em uma **Class Library .NET Standard 2.0**, 
+permitindo o envio e armazenamento de logs para monitoramento centralizado e em tempo real.
+
 ---
 
 ## 🛠 Tecnologias Utilizadas
@@ -12,15 +15,19 @@ O projeto segue boas práticas de arquitetura e é ideal como base para estudos 
 - **LINQ** → Consultas mais legíveis e expressivas diretamente em C#.  
 - **Dependency Injection (DI)** → Gerenciamento de serviços e repositórios com baixo acoplamento.  
 - **Swagger / Swashbuckle** → Documentação interativa da API.  
-- **Migrations (EF Core)** → Controle de versão do banco de dados.  
-
+- **Migrations (EF Core)** → Controle de versão do banco de dados.
+- **Serilog** → Biblioteca de logging flexível e extensível. 
+- **Azure Blob Storage** → Serviço de armazenamento de objetos da Microsoft.
+- **Azure Event Hub** → Serviço de ingestão de eventos em tempo real. 
 ---
 
 ## ⚙️ Funcionalidades Principais
 
 - 🔹 **Gerenciamento de músicas**: cadastro e listagem de músicas de acordo com o artista.  
 - 🔹 **Controle de artistas**: cadastro e listagem de artistas.  
-- 🔹 **Documentação via Swagger**: acesso rápido e fácil para testar os endpoints.  
+- 🔹 **Documentação via Swagger**: acesso rápido e fácil para testar os endpoints.
+- 🔹 **Envio de logs em tempo real** para o Event Hub.  
+- 🔹 **Armazenamento persistente** de logs no Blob Storage.   
 
 ---
 
@@ -34,6 +41,11 @@ MusicSoundAPI/
  ┣ Services/          → Regras de negócio
  ┣ Program.cs         → Configuração inicial da aplicação
  ┗ appsettings.json   → Configurações do projeto e banco de dados
+
+MonitoringLogs/
+ ┣ Services/            → Regras de Negócio do Azure
+ ┣ Models/              → Entidades e DTOs de Log
+ ┗ Middleware/          → Envia os Logs para Blob Storage e EventHub
 ```
 
 ---
@@ -41,9 +53,6 @@ MusicSoundAPI/
 ## 🛠 Futuras Melhorias
 
 - **Implementar Autenticação e Autorização** → Utilizar Pacotes da Microsoft de Autenticação para segurança.  
-- **Adição de Logs** → Utilizar EventHub e BlobStorage para monitoramento da aplicação.
 - **Visualização no Kibana** → Integrar os Logs da Azure ao Elasticsearch e monitorar a aplicação por meio de dashboards.  
-
-
 
 🔗 **Autor:** [Álvaro](https://github.com/GitAlvaro-student)  
