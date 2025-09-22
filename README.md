@@ -26,8 +26,32 @@ permitindo o envio e armazenamento de logs para monitoramento centralizado e em 
 - 🔹 **Gerenciamento de músicas**: cadastro e listagem de músicas de acordo com o artista.  
 - 🔹 **Controle de artistas**: cadastro e listagem de artistas.  
 - 🔹 **Documentação via Swagger**: acesso rápido e fácil para testar os endpoints.
-- 🔹 **Envio de logs em tempo real** para o Event Hub.  
-- 🔹 **Armazenamento persistente** de logs no Blob Storage.   
+- 🔹 **Envio de logs em tempo real** para o Event Hub.
+
+![Exemplo Event Hub](MusicSoundAPI/Images/EventHub-Example.png)
+
+- 🔹 **Armazenamento persistente** de logs no Blob Storage.
+   
+![Exemplo Blob Storage](MusicSoundAPI/Images/BlobStorage-Container-Example.png)
+
+**Exemplo de Log gerado**
+
+```
+{
+   "CorrelationalId":"e4f17a80-a884-4aa3-8c5e-d8d6393a3428",
+   "TimeStamp":"2025-09-21T22:33:39.985\u002B0",
+   "Application":"MusicSoundAPI",
+   "Source":"GetArtistById",
+   "Code":"404",
+   "Message":"Artista nao encontrado",
+   "Level":"Error",
+   "Properties":{
+      "Properties":{
+         "Properties":37
+      }
+   }
+}
+```
 
 ---
 
